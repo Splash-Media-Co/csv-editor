@@ -8,9 +8,10 @@
   <div id="container" class="container mx-auto">
     <h1 class="text-4xl font-bold text-center my-4">Simple CSV Editor</h1>
     <p class="text-lg text-gray-700 mb-4">Enter the text and label for each entry, then click the Add button to add it to the table. You can also export the data to a CSV file by clicking the Export button.</p>
-    <div id="inputs" class="flex items-center justify-center space-x-4">
+    <div id="inputs" class="flex items-center justify-center space-x-2">
       <label for="text" class="text-gray-800">Text:</label>
       <input type="text" id="text" name="text" required class="border border-gray-300 rounded px-2 py-1">
+      
       <label for="label" class="text-gray-800">Label:</label>
       <input type="text" id="label" name="label" required class="border border-gray-300 rounded px-2 py-1">
       <button id="add" class="bg-blue-500 hover:bg-blue-600 text-white font-bold px-4 py-2 rounded">Add</button>
@@ -20,8 +21,8 @@
       <table id="data" class="w-full border border-gray-300">
         <thead>
           <tr class="bg-gray-100">
-            <th class="border border-gray-300 px-4 py-2 text-gray-800">Text</th>
-            <th class="border border-gray-300 px-4 py-2 text-gray-800">Label</th>
+            <th class="border border-gray-300 text-gray-800">Text</th>
+            <th class="border border-gray-300 text-gray-800">Label</th>
           </tr>
         </thead>
         <tbody>
